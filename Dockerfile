@@ -7,6 +7,7 @@ ENV KUBE_LATEST_VERSION="v1.17.3"
 RUN apk add --update --no-cache bash curl -t deps && \
     apk add --update --no-cache git && \
     curl -L https://storage.googleapis.com/kubernetes-release/release/${KUBE_LATEST_VERSION}/bin/linux/amd64/kubectl -o /usr/local/bin/kubectl && \
+    chmod +x /usr/local/bin/kubectl && \
     helm plugin install https://github.com/hypnoglow/helm-s3.git && \
     apk del --purge deps
 
