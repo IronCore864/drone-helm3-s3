@@ -1,6 +1,6 @@
 # drone-helm3-s3 Plugin
 
-A docker image based on alpine/helm3, with helm-s3 plugin installed so that you can use AWS S3 bucket as your helm chart repository.
+A docker image based on alpine/helm3, with helm-s3 plugin and kubectl installed so that you can use AWS S3 bucket as your helm chart repository.
 
 ## DockerHub
 
